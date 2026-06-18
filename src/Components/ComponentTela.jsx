@@ -2,20 +2,27 @@ import { StyleSheet, Text, View, TextInput } from 'react-native';
 
 export default function ComponentTela(){
     return(
-        <View>
-        <TextInput
-        style={styles.tela}
-        />
+       <View>
+        <View style={styles.calculadora}>
+        <Text
+        style={styles.tela}>Texto</Text>
         </View>
+       </View>
     )
 }
 
 const styles = StyleSheet.create({
     tela:{
         backgroundColor: 'white',
-        width: 450,
-        height: 30,
-        justifyContent: 'flex-start',
-        alignItems: 'center',
+        alignSelf: 'center',
+        justifyContent: 'center',
+        
+    },
+
+    calculadora:{
+        backgroundColor: 'purple',
+        height: 300,
+        width: 250,
+        borderRadius: 25,
     }
 });
