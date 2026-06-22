@@ -31,7 +31,7 @@ export default function ComponentTela() {
                     </TouchableOpacity>
                 </View>
 
-                {/* Fileira 2 */}
+                {/* Fileira 2 */} 
                 <View style={styles.linha}>
                     <TouchableOpacity style={styles.botaoGeral} onPress={() => pressionarBotao('7')}>
                         <Text style={styles.textoBotao}>7</Text>
@@ -63,12 +63,12 @@ export default function ComponentTela() {
                     </TouchableOpacity>
                 </View>
 
-                {/* Bloco de Baixo (União das duas últimas fileiras) */}
+                {/* 2 últimas fileiras*/}
                 <View style={styles.blocoInferior}>
                     
-                    <View style={styles.subBlocoNumeros}>
+                    <View style={styles.subBloco}>
                      
-                        <View style={styles.linhaInterna}>
+                        <View style={styles.linha2}>
                             <TouchableOpacity style={styles.botaoGeral} onPress={() => pressionarBotao('1')}>
                                 <Text style={styles.textoBotao}>1</Text>
                             </TouchableOpacity>
@@ -80,7 +80,7 @@ export default function ComponentTela() {
                             </TouchableOpacity>
                         </View>
 
-                        <View style={styles.linhaInterna}>
+                        <View style={styles.linha2}>
                             <TouchableOpacity style={styles.botaoGeral} onPress={() => pressionarBotao('0')}>
                                 <Text style={styles.textoBotao}>0</Text>
                             </TouchableOpacity>
@@ -93,7 +93,7 @@ export default function ComponentTela() {
                         </View>
                     </View>
 
-                    <TouchableOpacity style={styles.botaoMaisGrande} onPress={() => pressionarBotao('+')}>
+                    <TouchableOpacity style={styles.btnBig} onPress={() => pressionarBotao('+')}>
                         <Text style={styles.textoBotao}>+</Text>
                     </TouchableOpacity>
                 </View>
@@ -145,12 +145,12 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
 
-    subBlocoNumeros: {
+    subBloco: {
         flex: 1,
-        marginRight: 13, // Espaçamento exato para o botão "+" não colar
+        marginRight: 13, 
     },
 
-    linhaInterna: {
+    linha2: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         marginBottom: 10,
@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
 
-    botaoMaisGrande: {
+    btnBig: {
         backgroundColor: 'rgba(255, 255, 255, 0.2)',
         width: 50,
         height: 110, 
