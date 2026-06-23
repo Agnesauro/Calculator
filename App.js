@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Touchable, Button, TouchableOpacity, Alert } from 'react-native';
 import ComponentTela from './src/Components/ComponentTela';
 
 export default function App() {
